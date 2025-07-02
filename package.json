@@ -1,0 +1,9 @@
+{
+  "name": "cognia-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "description": "Monorepo para Cognia - site institucional e futuros serviços.",
+  "license": "MIT"
+} 

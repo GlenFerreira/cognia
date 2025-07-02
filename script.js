@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             } else if (this.textContent.includes('Demonstração')) {
                 e.preventDefault();
-                alert('Demonstração em desenvolvimento! Em breve você poderá testar nossa tecnologia.');
+                window.location.href = 'demo.html';
             } else if (this.textContent.includes('Entre em Contato')) {
                 e.preventDefault();
                 document.querySelector('#contact').scrollIntoView({

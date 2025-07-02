@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstração - IA Preditiva para Parkinson</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .demo-hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 8rem 0 4rem;
+            text-align: center;
+        }
+        
+        .demo-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .demo-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 3rem;
+        }
+        
+        .demo-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .demo-stat {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        .demo-stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .demo-stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .demo-description {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .demo-features {
+            padding: 4rem 0;
+            background: var(--neutral-color);
+        }
+        
+        .demo-features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .demo-feature {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .demo-feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .demo-feature-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .demo-feature h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .demo-feature p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        .back-button {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .demo-title {
+                font-size: 2rem;
+            }
+            
+            .demo-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .demo-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .back-button {
+                top: 1rem;
+                left: 1rem;
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Voltar
+    </a>
+
+    <!-- Demo Hero Section -->
+    <section class="demo-hero">
+        <div class="container">
+            <h1 class="demo-title">IA Preditiva para Detecção Precoce de Parkinson</h1>
+            <p class="demo-subtitle">Tecnologia avançada em análise de imagens médicas</p>
+            
+            <div class="demo-stats">
+                <div class="demo-stat">
+                    <span class="demo-stat-number">&lt; 1 minuto</span>
+                    <span class="demo-stat-label">Tempo de Resposta</span>
+                </div>
+                <div class="demo-stat">
+                    <span class="demo-stat-number">96%</span>
+                    <span class="demo-stat-label">Acurácia Preliminar</span>
+                </div>
+                <div class="demo-stat">
+                    <span class="demo-stat-number">CNNs</span>
+                    <span class="demo-stat-label">Redes Neurais Convolucionais</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Description -->
+    <section class="demo-description">
+        <div class="container">
+            <p>
+                Modelo de Inteligência Artificial preditivo baseado em Redes Neurais Convolucionais (CNNs) 
+                que analisa imagens de Ressonância Magnética Cerebral para identificar padrões associados 
+                ao risco de desenvolvimento do Parkinson, auxiliando profissionais da saúde no pré-diagnóstico 
+                de forma rápida, precisa e eficiente.
+            </p>
+        </div>
+    </section>
+
+    <!-- Demo Features -->
+    <section class="demo-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Características da Solução</h2>
+                <p>Interface simples e adaptável a qualquer clínica</p>
+            </div>
+            
+            <div class="demo-features-grid">
+                <div class="demo-feature">
+                    <div class="demo-feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Análise de RM Cerebral</h3>
+                    <p>CNNs treinadas especificamente para analisar exames de Ressonância Magnética cerebral, 
+                    identificando padrões sutis associados ao desenvolvimento do Parkinson.</p>
+                </div>
+                
+                <div class="demo-feature">
+                    <div class="demo-feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Resultados Rápidos</h3>
+                    <p>Tempo de resposta inferior a 1 minuto, permitindo diagnósticos preliminares 
+                    em tempo real durante a consulta médica.</p>
+                </div>
+                
+                <div class="demo-feature">
+                    <div class="demo-feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Alta Precisão</h3>
+                    <p>Acurácia preliminar de 96% na detecção de padrões associados ao risco 
+                    de desenvolvimento da Doença de Parkinson.</p>
+                </div>
+                
+                <div class="demo-feature">
+                    <div class="demo-feature-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Integração Simples</h3>
+                    <p>Interface adaptável que pode ser facilmente integrada aos sistemas 
+                    existentes de qualquer clínica ou hospital.</p>
+                </div>
+                
+                <div class="demo-feature">
+                    <div class="demo-feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Suporte ao Profissional</h3>
+                    <p>Ferramenta de apoio que auxilia médicos na tomada de decisão, 
+                    fornecendo insights valiosos para o diagnóstico precoce.</p>
+                </div>
+                
+                <div class="demo-feature">
+                    <div class="demo-feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Segurança e Privacidade</h3>
+                    <p>Conformidade total com LGPD e HIPAA, garantindo a proteção 
+                    dos dados dos pacientes e a privacidade médica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Interessado em Nossa Tecnologia?</h2>
+                <p>Entre em contato para saber mais sobre como podemos ajudar sua instituição</p>
+                <a href="index.html#contact" class="btn btn-primary">Solicitar Demonstração</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 
